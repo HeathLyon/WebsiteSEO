@@ -235,4 +235,89 @@
       }
     });
   });
+
+const heroSideCallouts = {
+  left: [
+    {
+      index: "01",
+      label: "Interior care",
+      title: "Remove mildew and stains",
+      detail: "Vinyl, carpet, cubbies, cupholders, and under-seat areas."
+    },
+    {
+      index: "03",
+      label: "Pontoon care",
+      title: "Brighten tubes and waterlines",
+      detail: "Address buildup, scum, and visible residue where access permits."
+    },
+    {
+      index: "05",
+      label: "Seasonal reset",
+      title: "Open or close the season cleaner",
+      detail: "Prepare the boat for storage, sale, or the next stretch of lake days."
+    }
+  ],
+  right: [
+    {
+      index: "02",
+      label: "Finish correction",
+      title: "Bring back depth and gloss",
+      detail: "Water spots, oxidation, compounding, polishing, and protection."
+    },
+    {
+      index: "04",
+      label: "Marine protection",
+      title: "Make future upkeep easier",
+      detail: "Choose wax, sealant, or coating after the finish is properly prepared."
+    },
+    {
+      index: "06",
+      label: "Mobile service",
+      title: "Detail where the boat lives",
+      detail: "Dock, driveway, lift, marina, or dry storage when access allows."
+    }
+  ]
+};
+
+const calloutElements = {
+  left: document.querySelector('[data-hero-callout="left"]'),
+  right: document.querySelector('[data-hero-callout="right"]')
+};
+
+const updateHeroCallout = (side, item) => {
+  const element = calloutElements[side];
+  if (!element || !item) return;
+
+  element.classList.add("is-changing");
+
+  window.setTimeout(() => {
+    const index = element.querySelector(".dynamic-callout-index");
+    const label = element.querySelector("small");
+    const title = element.querySelector("strong");
+    const detail = element.querySelector("p");
+
+    if (index) index.textContent = item.index;
+    if (label) label.textContent = item.label;
+    if (title) title.textContent = item.title;
+    if (detail) detail.textContent = item.detail;
+
+    element.classList.remove("is-changing");
+  }, 360);
+};
+
+if (calloutElements.left && calloutElements.right && !prefersReducedMotion) {
+  let heroCalloutIndex = 0;
+
+  window.setInterval(() => {
+    heroCalloutIndex =
+      (heroCalloutIndex + 1) % heroSideCallouts.left.length;
+
+    updateHeroCallout("left", heroSideCallouts.left[heroCalloutIndex]);
+
+    window.setTimeout(() => {
+      updateHeroCallout("right", heroSideCallouts.right[heroCalloutIndex]);
+    }, 420);
+  }, 4300);
+}
+
 })();

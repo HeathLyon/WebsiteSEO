@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.example.com/">
   <meta name="theme-color" content="#071c2b">
-  <link rel="stylesheet" href="assets/css/styles.css?v=jpg-slideshow-3">
+  <link rel="stylesheet" href="assets/css/styles.css?v=intro-motion-1">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -71,76 +71,73 @@
     </div>
   </header>
   <main id="main-content">
-    <section class="hero hero-boat hero-photo-slider" data-hero-slider>
+    <section class="hero hero-boat hero-photo-slider hero-intro-experience" data-hero-slider>
       <div class="hero-slideshow" aria-hidden="true">
-        <div class="hero-slide" data-image-name="picture1"></div>
-        <div class="hero-slide" data-image-name="picture2"></div>
-        <div class="hero-slide" data-image-name="picture3"></div>
+        <div class="hero-slide"></div>
+        <div class="hero-slide"></div>
+        <div class="hero-slide"></div>
       </div>
+
       <div class="hero-photo-scrim" aria-hidden="true"></div>
       <div class="hero-photo-vignette" aria-hidden="true"></div>
       <div class="hero-grid-overlay" aria-hidden="true"></div>
+      <div class="hero-focus-gradient" aria-hidden="true"></div>
 
-      <div class="container hero-grid hero-photo-grid">
-        <div class="hero-content hero-photo-content reveal">
+      <div class="container hero-intro-layout">
+        <aside class="hero-dynamic-callout hero-dynamic-callout-left" data-hero-callout="left" aria-live="polite">
+          <span class="dynamic-callout-index">01</span>
+          <div>
+            <small>Interior care</small>
+            <strong>Remove mildew and stains</strong>
+            <p>Vinyl, carpet, cubbies, cupholders, and under-seat areas.</p>
+          </div>
+        </aside>
+
+        <div class="hero-intro-copy">
           <div class="hero-kicker">
             <span class="status-dot" aria-hidden="true"></span>
-            Mooresville-based Lake Norman boat detailing
+            Mooresville • Lake Norman • Mobile boat care
           </div>
 
-          <h1>Make every lake day feel <span class="text-gradient">brand new.</span></h1>
-          <p class="hero-copy">Request a local quote for mobile cleaning, interior restoration, oxidation correction, polishing, ceramic protection, pontoon care, and seasonal maintenance.</p>
+          <h1>A cleaner boat changes the <span class="text-gradient">whole lake day.</span></h1>
 
-          <div class="button-row hero-button-row">
-            <a class="button button-large hero-primary-button" href="contact.html">
-              Detail Your Boat
+          <p class="hero-copy">
+            Restore the look, comfort, and protection of your boat with local cleaning,
+            correction, and detailing options built around its real condition.
+          </p>
+
+          <div class="hero-intro-actions">
+            <a class="button button-secondary button-large hero-glass-button" href="services.html">
+              Explore boat care
               <span aria-hidden="true">→</span>
             </a>
-            <a class="button button-secondary button-large" href="services.html">Explore Services</a>
           </div>
 
-          <div class="trust-chips" aria-label="Service advantages">
-            <span><i aria-hidden="true">✓</i> Dock, driveway, lift, or dry storage</span>
-            <span><i aria-hidden="true">✓</i> Photo-based initial scope</span>
-            <span><i aria-hidden="true">✓</i> Lake Norman service area</span>
+          <div class="hero-intro-tags" aria-label="Lake Norman detailing advantages">
+            <span>Dock or driveway</span>
+            <span>Photo-based scope</span>
+            <span>Local provider matching</span>
           </div>
-
-          <p class="disclosure">Referral disclosure: this website connects quote requests with selected independent providers. The provider confirms access, final scope, price, schedule, insurance, and workmanship terms.</p>
         </div>
 
-        <aside class="hero-service-panel reveal" aria-label="Popular Lake Norman boat detailing services">
-          <div class="hero-panel-topline">
-            <div>
-              <span class="showcase-label">Lake Norman boat care</span>
-              <strong>Clean. Correct. Protect.</strong>
-            </div>
-            <span class="availability-pill">Mooresville, NC</span>
-          </div>
-
-          <div class="hero-panel-services">
-            <a href="services.html#full-detail">
-              <span class="hero-panel-number">01</span>
-              <span><strong>Full mobile detail</strong><small>Interior, exterior, compartments, glass, and trim</small></span>
-              <b aria-hidden="true">↗</b>
-            </a>
-            <a href="services.html#correction">
-              <span class="hero-panel-number">02</span>
-              <span><strong>Gelcoat correction</strong><small>Water spots, oxidation, compounding, and polishing</small></span>
-              <b aria-hidden="true">↗</b>
-            </a>
-            <a href="services.html#protection">
-              <span class="hero-panel-number">03</span>
-              <span><strong>Marine protection</strong><small>Sealants and ceramic options after proper preparation</small></span>
-              <b aria-hidden="true">↗</b>
-            </a>
-          </div>
-
-          <div class="hero-panel-footer">
-            <span class="panel-pulse" aria-hidden="true"></span>
-            <span>Serving requests around Lake Norman</span>
+        <aside class="hero-dynamic-callout hero-dynamic-callout-right" data-hero-callout="right" aria-live="polite">
+          <span class="dynamic-callout-index">02</span>
+          <div>
+            <small>Finish correction</small>
+            <strong>Bring back depth and gloss</strong>
+            <p>Water spots, oxidation, compounding, polishing, and protection.</p>
           </div>
         </aside>
       </div>
+
+      <a class="hero-center-cta" href="contact.html" aria-label="Clean your boat and request a quote">
+        <span class="hero-cta-rings" aria-hidden="true"></span>
+        <span class="hero-cta-copy">
+          <strong>Clean Your Boat!</strong>
+          <small>Start your local quote</small>
+        </span>
+        <span class="hero-cta-arrow" aria-hidden="true">↓</span>
+      </a>
 
       <div class="container hero-slider-controls" aria-label="Hero image controls">
         <div class="hero-slider-dots" role="group" aria-label="Choose hero image">
@@ -159,6 +156,114 @@
       <div><span class="proof-number">03</span><strong>Right service</strong><small>Cleaning, correction, protection, or specialty care.</small></div>
       <div><span class="proof-number">04</span><strong>Clear handoff</strong><small>The provider confirms the final quote and schedule.</small></div>
     </div></section>
+
+    <section class="section service-stories-section" id="why-detail">
+      <div class="container">
+        <div class="service-stories-heading reveal">
+          <p class="eyebrow">Why detail the boat?</p>
+          <h2>Cleaning protects more than the way it looks.</h2>
+          <p>
+            A good detail improves the experience on the water while helping owners
+            manage residue, moisture, UV exposure, oxidation, and difficult-to-clean buildup.
+          </p>
+        </div>
+
+        <div class="service-story-list">
+          <article class="service-story reveal reveal-left">
+            <div class="service-story-visual story-visual-interior" aria-hidden="true">
+              <span class="story-number">01</span>
+              <div class="story-visual-symbol">◇</div>
+              <small>Interior reset</small>
+            </div>
+            <div class="service-story-copy">
+              <p class="eyebrow">Comfort and presentation</p>
+              <h3>Make the interior feel ready for people again.</h3>
+              <p>
+                Vinyl, flooring, carpet, storage spaces, cupholders, and shaded areas can
+                collect sunscreen, food residue, moisture, mildew, and lake-day debris.
+                A thorough interior detail creates a cleaner place to relax and makes
+                recurring maintenance easier.
+              </p>
+              <ul class="story-benefits">
+                <li>Cleaner seating and touch surfaces</li>
+                <li>Attention to mildew-prone compartments</li>
+                <li>Better presentation for guests or resale</li>
+              </ul>
+              <a href="services.html#interior">Explore interior care <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="service-story service-story-reverse reveal reveal-right">
+            <div class="service-story-visual story-visual-correction" aria-hidden="true">
+              <span class="story-number">02</span>
+              <div class="story-visual-symbol">✦</div>
+              <small>Gelcoat correction</small>
+            </div>
+            <div class="service-story-copy">
+              <p class="eyebrow">Restore the finish</p>
+              <h3>Address water spots and oxidation before they dominate the surface.</h3>
+              <p>
+                Lake exposure, storage conditions, and UV can leave a finish dull or
+                chalky. Inspection, compounding, polishing, and—when appropriate—more
+                advanced correction can improve clarity and restore a stronger visual finish.
+              </p>
+              <ul class="story-benefits">
+                <li>Condition-based correction rather than a generic polish</li>
+                <li>Improved gloss and surface clarity</li>
+                <li>Preparation for sealant or ceramic protection</li>
+              </ul>
+              <a href="services.html#correction">Explore finish correction <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="service-story reveal reveal-left">
+            <div class="service-story-visual story-visual-protection" aria-hidden="true">
+              <span class="story-number">03</span>
+              <div class="story-visual-symbol">⬡</div>
+              <small>Surface protection</small>
+            </div>
+            <div class="service-story-copy">
+              <p class="eyebrow">Easier future maintenance</p>
+              <h3>Protect a properly prepared finish from the next round of exposure.</h3>
+              <p>
+                Wax, marine sealants, and coating systems serve different owners and
+                maintenance plans. The important step is preparing the surface correctly
+                and choosing protection that matches use, storage, and realistic upkeep.
+              </p>
+              <ul class="story-benefits">
+                <li>Helps reduce how strongly grime bonds to the finish</li>
+                <li>Supports easier routine wash maintenance</li>
+                <li>Adds a deliberate protection step after correction</li>
+              </ul>
+              <a href="services.html#protection">Explore protection options <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="service-story service-story-reverse reveal reveal-right">
+            <div class="service-story-visual story-visual-mobile" aria-hidden="true">
+              <span class="story-number">04</span>
+              <div class="story-visual-symbol">⌖</div>
+              <small>Mobile convenience</small>
+            </div>
+            <div class="service-story-copy">
+              <p class="eyebrow">Built around where the boat lives</p>
+              <h3>Get the work scoped at the dock, driveway, lift, or storage location.</h3>
+              <p>
+                Mobile service can reduce hauling and simplify scheduling, but access,
+                utilities, marina rules, weather, and safe workspace still matter. A
+                detailed intake helps match the request with a provider prepared for the site.
+              </p>
+              <ul class="story-benefits">
+                <li>Location-aware quote requests</li>
+                <li>Clear water and power access details</li>
+                <li>Fewer surprises before scheduling</li>
+              </ul>
+              <a href="service-areas.html">View Lake Norman coverage <span>→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <section class="section services-section"><div class="container">
       <div class="section-heading heading-row reveal"><div><p class="eyebrow">Popular Lake Norman services</p><h2>Start with what the boat actually needs.</h2></div><p>Local providers commonly separate routine cleaning from correction, restoration, bottom work, and longer-term protection. That distinction makes quotes more accurate.</p></div>
@@ -254,6 +359,6 @@
       <span>Marina, dock, lift, and property access remain subject to owner and facility permission.</span>
     </div>
   </footer>
-  <script src="assets/js/main.js?v=jpg-slideshow-3" defer></script>
+  <script src="assets/js/main.js?v=intro-motion-1" defer></script>
 </body>
 </html>
